@@ -1919,6 +1919,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             // Set default noise suppression value
             loadSetting(stmt, Settings.System.NOISE_SUPPRESSION, 0);
 
+            // Set the value of MOTO OEM for toggle use
+            loadSetting(stmt, Settings.System.MOTO_OEM_STATE,
+                "true".equalsIgnoreCase(SystemProperties.get(TelephonyProperties.PROPERTY_MOTO_OEM, "true")) ? "1" : "0");
+
+            // Set the value of IMSI FIX for toggle use
+            loadSetting(stmt, Settings.System.IMSI_FIX_STATE,
+                "true".equalsIgnoreCase(SystemProperties.get(TelephonyProperties.PROPERTY_IMSI_FIX, "true")) ? "1" : "0");
+
+            // Set default World Phone mode
+            loadSetting(stmt, Settings.System.WORLD_PHONE_STATE, 0);
+
+            // Set the value of GSM Signal Strength FIX for toggle use
+            loadSetting(stmt, Settings.System.GSM_SIGNALSTRENGTH_FIX_STATE,
+                "true".equalsIgnoreCase(SystemProperties.get(TelephonyProperties.PROPERTY_GSM_SIGNALSTRENGTH_FIX, "true")) ? "1" : "0");
+
             loadIntegerSetting(stmt, Settings.System.SCREEN_BRIGHTNESS,
                     R.integer.def_screen_brightness);
 
