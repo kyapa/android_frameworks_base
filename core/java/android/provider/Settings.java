@@ -1434,28 +1434,6 @@ public final class Settings {
         public static final int ADVANCED_SETTINGS_DEFAULT = 0;
 
         /**
-         * Setting to indicate a Motorola phone which needs OEM specific code
-         * @see com.android.internal.telephony.RIL
-         */
-        public static final String MOTO_OEM_STATE = Global.MOTO_OEM_STATE;
-
-         /**
-         * Set to true to indicate a Motorola phone which needs OEM specific code
-         * for handling getIMSI
-         */
-        public static final String IMSI_FIX_STATE = Global.IMSI_FIX_STATE;
-
-        /**
-         * Setting to indicate world phone
-         */
-        public static final String WORLD_PHONE_STATE = Global.WORLD_PHONE_STATE;
-
-         /**
-         * Set to true to indicate a phone which needs GSM Signal Strength Fix
-         */
-        public static final String GSM_SIGNALSTRENGTH_FIX_STATE = Global.GSM_SIGNALSTRENGTH_FIX_STATE;
-
-        /**
          * @deprecated Use {@link android.provider.Settings.Global#AIRPLANE_MODE_ON} instead
          */
         @Deprecated
