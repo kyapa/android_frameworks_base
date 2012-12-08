@@ -192,26 +192,4 @@ public interface TelephonyProperties
      * Ignore RIL_UNSOL_NITZ_TIME_RECEIVED completely, used for debugging/testing.
      */
     static final String PROPERTY_IGNORE_NITZ = "telephony.test.ignore.nitz";
-
-    /**
-      * Set to true to indicate a Motorola phone which needs OEM specific code
-      * for handling LTE/CDMA/GSM
-      */
-    static final String PROPERTY_MOTO_OEM = "persist.sys.moto_oem_telephony";
-
-      /**
-      * Set to true to indicate a Motorola phone which needs OEM specific code
-      * for handling getIMSI
-      */
-    static final String PROPERTY_IMSI_FIX = "persist.sys.moto_imsi_fix";
-
-    /**
-     * Set to true to indicate a phone which isn't world capable
-     */
-    static final String PROPERTY_NOT_WORLD_PHONE = "ro.config.not_world_phone";
-
-    /**
-     * Set to true to indicate a phone which needs GSM Signal Strength Fix
-     */
-    static final String PROPERTY_GSM_SIGNALSTRENGTH_FIX = "persist.sys.gsm_signalstrength";
 }
