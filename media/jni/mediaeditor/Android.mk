@@ -45,8 +45,8 @@ LOCAL_C_INCLUDES += \
     $(TOP)/frameworks/av/libvideoeditor/lvpp \
     $(TOP)/frameworks/av/libvideoeditor/osal/inc
 
-ifneq ($(DOMX_PATH),)
-LOCAL_C_INCLUDES += $(DOMX_PATH)/omx_core/inc
+ifneq ($(TI_CUSTOM_DOMX_PATH),)
+LOCAL_C_INCLUDES += $(TI_CUSTOM_DOMX_PATH)/omx_core/inc
 else
 LOCAL_C_INCLUDES += $(TOP)/frameworks/native/include/media/openmax
 endif
